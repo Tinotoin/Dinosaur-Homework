@@ -13,6 +13,8 @@ describe('Park', function() {
       dinosaur1 = new Dinosaur('raptor', 'carnivore', 100)
       dinosaur2 = new Dinosaur('triceratops', 'herbivore', 20)
       dinosaur3 = new Dinosaur('compylobacter', 'herbivore', 5)
+
+      dinosaurs = [dinosaur1, dinosaur2, dinosaur3]
   });
 
   it('should have a name', function(){
@@ -50,9 +52,12 @@ describe('Park', function() {
     const expected = (park.dinosaur.guestsAttractedPerDay);
     assert.deepStrictEqual(expected, 50)]
   }); // struggled with this one - pseudo code I think would be:
-        // find highest dinosaur.guestsAttractedPerDay from dinosaur.guestsAttractedPerDay
+        // find highest dinosaur.guestsAttractedPerDay from dinosaur.guestsAttractedPerDay - but not sure how to get to this.
 
-// Due to my difficulty with the above - and mainly calculating highest numbers/finding within groups etc - I stopped work on this.
+// I feel that if I was able to get the total visitors per day, then I'd be able to easily turn that into the amount/revenue per year by multiplying by 365 and then £10.
+
+// Due to my difficulty with the above - mainly calculating highest numbers/finding within groups etc - I stopped work on this as I didn't feel I was getting anywhere.
+
 
   // it('should be able to find all dinosaurs of a particular species');
   //
